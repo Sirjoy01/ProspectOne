@@ -2,10 +2,10 @@ from flask import Flask
 from routes import *
 from database import init_db
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 if __name__ == "__main__":
     init_db()
-    app.run(host="0.0.0.0", port=5000)
+    flask_app.run(host="0.0.0.0", port=5000)
 
-app = app
+app = flask_app
