@@ -21,3 +21,7 @@ def home():
     preferences = get_user_preferences(distributor)
     suggestions = get_suggestions(distributor, preferences)
     return render_template("home.html", suggestions=suggestions)
+
+@app.route("/test")
+def test():
+    return "ça marche !"
