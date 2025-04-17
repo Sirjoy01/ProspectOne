@@ -13,7 +13,6 @@ def login():
         else:
             return render_template("login.html", error="Accès refusé.")
     return render_template("login.html")
-
 @app.route("/home", methods=["GET", "POST"])
 def home():
     if "distributor" not in session:
