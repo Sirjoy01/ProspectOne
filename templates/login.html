@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Connexion à ProspectOne</title></head>
+<body>
+    <h1>Connexion à ProspectOne</h1>
+    <form method="post">
+        Identifiant : <input name="distributor" required />
+        <button type="submit">Se connecter</button>
+    </form>
+    {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+</body>
+</html>
