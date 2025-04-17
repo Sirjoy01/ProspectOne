@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for, session
 from run import app
 from database import validate_login, get_suggestions, save_contacted, get_user_preferences
-from ia.messaging import prepare_message
+from messaging import prepare_message
 
 @app.route("/", methods=["GET", "POST"])
 def login():
